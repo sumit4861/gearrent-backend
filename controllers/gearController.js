@@ -1,5 +1,8 @@
 const Gear = require('../models/Gear');
 const Groq = require('groq-sdk');
+const Booking = require('../models/Booking')
+const Review = require('../models/Review')
+
 //GET /gear - all listings with optional filters
 exports.getAllGear = async (req, res) => {
   try{
@@ -100,8 +103,11 @@ exports.deleteGear = async (req, res) => {
       return res.status(403).json({ message: 'Not authorized to delete this listing' });
     }
 
+    await Booking.deleteMany({ gear: gear._id})
+    await Review.deleteMany({ gear: gear._id})
+
     await gear.deleteOne();
-    res.status(200).json({message: 'Gear deleted successfully'});
+    res.status(200).json({message: 'Gear and associated data deleted successfully'});
 
   } catch (err) {
     res.status(500).json({ message: 'Server error', error: err.message });
