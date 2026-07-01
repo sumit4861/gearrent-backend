@@ -48,7 +48,7 @@ Frontend (React + Vite)          Backend (Node.js + Express)
 | Database | MongoDB, Mongoose |
 | Auth | JWT, bcryptjs |
 | Image Upload | Cloudinary, Multer |
-| AI | Groq API (llama3-8b-8192) |
+| AI | Groq API (gpt-oss-120b) |
 | Deployment | Render (backend), Vercel (frontend) |
 
 ---
