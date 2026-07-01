@@ -2,7 +2,7 @@
 
 A full-stack web application where gear owners list their equipment for rent and renters can browse, book, and review gear — built using the MERN stack with AI-powered listing descriptions.
 
-🔗 **Live Demo:** [gear-rent.vercel.app](https://gearrent-frontend.vercel.app)  
+🔗 **Live Demo:** [gear-rent.vercel.app](https://gear-rent.vercel.app)  
 📦 **Backend Repo:** [github.com/sumit4861/gearrent-backend](https://github.com/sumit4861/gearrent-backend)  
 💻 **Frontend Repo:** [github.com/sumit4861/gearrent-frontend](https://github.com/sumit4861/gearrent-frontend)
 
